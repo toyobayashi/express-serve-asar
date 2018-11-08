@@ -1,0 +1,26 @@
+{
+  "name": "express-serve-asar",
+  "version": "1.0.0",
+  "description": "An Node.js Express middleware for serving static files inside Electron's asar file.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/toyobayashi/express-serve-asar.git"
+  },
+  "keywords": [
+    "express",
+    "static",
+    "asar"
+  ],
+  "author": "toyobayashi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/toyobayashi/express-serve-asar/issues"
+  },
+  "homepage": "https://github.com/toyobayashi/express-serve-asar#readme",
+  "dependencies": {
+    "chromium-pickle-js": "^0.2.0",
+    "cuint": "^0.2.2",
+    "mime": "^2.3.1"
+  }
+}
