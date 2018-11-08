@@ -1,6 +1,6 @@
 # express-serve-asar
 
-An Node.js Express middleware for serving static files inside Electron's asar file. Also works with webpack-dev-server.
+A Node.js Express middleware for serving static files inside Electron's asar file. Also works with webpack-dev-server.
 
 ## Usage
 
