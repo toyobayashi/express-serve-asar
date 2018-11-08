@@ -51,7 +51,7 @@ function serveAsar (contentBase, header) {
   return function (req, res, next) {
     if (!req.path.includes('.asar/')) return next()
 
-    const fullPath = path.join(contentBase || process.cwd(), req.path)
+    const fullPath = path.join(contentBase || process.cwd(), decodeURIComponent(req.path))
     const archive = fullPath.substr(0, fullPath.indexOf('.asar' + path.sep) + 5)
     const asarFile = fullPath.substr(fullPath.indexOf('.asar' + path.sep) + 6)
     try {

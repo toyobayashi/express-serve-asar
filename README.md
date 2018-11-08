@@ -8,6 +8,7 @@ A Node.js Express middleware for serving static files inside Electron's asar fil
 const serveAsar = require('express-serve-asar')
 const devServer = require('webpack-dev-server')
 const webpack = require('webpack')
+const path = require('path')
 const webpackConfig = require('./somewhere/webpack.config.js')
 const compiler = webpack(webpackConfig)
 
