@@ -63,6 +63,9 @@ function serveAsar (contentBase, header) {
           'Content-Type': mime.getType(asarFile),
           'Content-Length': info.size
         }
+        if (mime.getType(asarFile).indexOf('audio') !== -1) {
+          defaultHeader['Accept-Ranges'] = 'bytes'
+        }
         res.set(header ? Object.assign({}, defaultHeader, header) : defaultHeader)
 
         fs.createReadStream('', {
